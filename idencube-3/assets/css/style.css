@@ -1,0 +1,724 @@
+@font-face {
+    font-family: playfair-regular;
+    src: url('../fonts/PlayfairDisplay-Regular.ttf') format(truetype);
+}
+*{
+    font-family: playfair-regular!important;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+.cont{
+    padding: 0 20%;
+    width: 100%;
+    position: relative;
+}
+.heading{
+    font-size: 50px;
+    line-height: 67px;
+}
+header .cont{
+    display: flex;
+}
+header nav{
+    background-color: rgba(16, 16, 14, 0.8);
+}
+header ul li {
+    margin-right: 32px;
+}
+
+header ul li:last-child{
+    margin: 0;
+}
+header ul li a{
+    color: #fff!important;
+    font-weight: 400;
+}
+.main-screen{
+    background-color: #10100E;
+    color: #ffff;
+    position: relative;
+}
+.main-screen .main-screen-img{
+    width: 100%;
+    height: 100%;
+}
+.main-screen .cont{
+    position: absolute;
+    /* height: 100%; */
+    inset: 0;
+    top: 250px;
+}
+.main-screen .text-area{
+    width: 50%;
+}
+.main-screen .text-area h1{
+    font-size: 60px;
+}
+.main-screen .text-area h3{
+    font-size: 30px;
+    margin-left: 95px;
+}
+.main-screen .head-scroll{
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.main-screen .head-scroll::before{
+    content: "";
+    width: 4px;
+    height: 9px;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+}
+.main-screen .main-screen-text{
+    position: absolute;
+    bottom: 120px;
+    width: 17%;
+    right: 20%;
+}
+/* about-section */
+.about-section{
+    position: relative;
+}
+.about-section .content{
+    padding-top: 105px;
+    position: relative;
+    height: 760px;
+}
+.about-section .main-img img{
+    position: absolute;
+    z-index: -1;
+    left: 185px;
+}
+.about-section .green-arrow img{
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    right: -150px;
+}
+.about-section .about-heading{
+    margin-left: 185px;
+}
+.about-section .text .first-para{
+    width: 23%;
+    font-size: 20px;
+    line-height: 27px;
+}
+.about-section .text .second-content{
+    width: 53%;
+    margin-left: auto;
+    position: absolute;
+    right: 0;
+    bottom: 40px;
+}
+/* team-section */
+.team-section{
+    margin-top: 250px; 
+}
+.team-section .team-heading{
+    margin-left: 285px;
+    width: fit-content;
+}
+.team-section .box{
+    padding: 30px;
+    position: absolute;
+    width: 255px;
+    z-index: 1;
+    height: 275px;
+    background: linear-gradient(to bottom, #FEDB27, #00B1D1);
+    left: 0;
+}
+.team-section .box p{
+    font-size: 20px;
+    line-height: 27px;
+    text-align: left;
+}
+.team-section .team-image{
+    margin-top: 53px;
+}
+.team-section .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets{
+    right: 0;
+    top: 50px;
+    width: fit-content;
+    left: unset;
+    overflow-y: auto;
+    padding-top: 20px;
+}
+.swiper-pagination-bullet{
+    background-color: transparent!important;
+    font-size: 50px!important;
+    width: 100%!important;
+    margin: 0!important;
+    line-height: 65px!important;
+    height: 100px;
+    margin-top: 25px!important;
+    opacity: 1;
+    transition: all 0.4s ease;
+}
+.swiper-pagination-bullet.swiper-pagination-bullet-active{
+    font-size: 200px!important;
+    /* margin-top: 100px!important; */
+    color: #00B1D1!important;
+}
+.swiper-pagination-bullet-active{
+    font-size: 64px;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.swiper-slide img {
+    display: block;
+    object-fit: cover;
+}
+.swiper-pagination-bullet-active {
+    color: #fff;
+    background: #007aff;
+}
+/* cards section */
+.card-section{
+    margin-top: 210px;
+}
+.card-section .header{
+    position: relative;
+} 
+.card-section .header .heading{
+    padding-top: 50px;
+}
+.card-section .header .desc{
+    line-height: 40px;
+    font-size: 30px;
+    width: 75%;
+    letter-spacing: 0px;
+}
+.card-section .header .bg-img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+.card-section .category{
+    width: 50%;
+    margin-bottom: 50px;
+}
+.card-section .category h3{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.card-section .category h3 span{
+    text-transform: uppercase;
+}
+.card-section .category p{
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+.card-section .category button{
+    border: 1px solid #000;
+    border-radius: 36px;
+    font-size: 18px;
+    line-height: 20px;
+    padding: 7px 15px;
+}
+.card-section .category button span{
+    font-size: 24px;
+    transition: all 0.4s ease;
+    font-weight: bold;
+}
+.card-section .category button:hover span{
+    transform: rotate(360deg);
+}
+
+.card-section .category button:focus{
+    outline: none;
+}
+.card-section .card-1{
+    margin-top: 125px;
+}
+.card-section .card-2{
+    margin-right: 5%;
+    margin-left: auto;
+}
+.card-section .card-3{
+    margin-left: 10%;
+    margin-right: auto;
+}
+.card-section .card-4{
+    margin-right: 15%;
+    margin-left: auto;
+}
+/* packages section */
+.packages-section .header{
+    width: 50%;
+}
+.packages-section .header .desc{
+    font-size: 20px;
+    margin-left: 100px;
+    margin-top: 55px;
+}
+.packages-section .package-title{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+.packages-section .card{
+    padding: 25px 40px 35px 30px;
+    text-align: center;
+    color: #000;
+    border: none;
+    background-color: #ECECEC;
+    box-shadow: 2px 2px 5px #ddd;
+}
+.packages-section .card .price{
+    font-size: 40px;
+    line-height: 55px;
+    margin-bottom: 20px;
+}
+.packages-section .card p{
+    font-size: 16px;
+    line-height: 21px;
+    margin-bottom: 25px;
+}
+.packages-section .middle-card p{
+    margin: auto;
+    margin-bottom: 70px;
+    width: 60%;
+}
+.packages-section .card button{
+    border: 1px solid #000;
+    border-radius: 36px;
+    font-size: 18px;
+    line-height: 20px;
+    width: fit-content;
+    margin: auto;
+    padding: 7px 15px;
+}
+.packages-section .card button span{
+    font-size: 24px;
+    transition: all 0.4s ease;
+    font-weight: bold;
+}
+.packages-section .card button:hover span{
+    transform: rotate(360deg);
+}
+
+.packages-section .card button:focus{
+    outline: none;
+}
+/* project-section */
+.project-heading{
+    margin-top: 128px;
+    font-size: 50px;
+    /* text-align: center; */
+    margin-left: 125px;
+}
+.box-1{
+    height: 208px !important;
+    background-color: red;
+    background-image: linear-gradient(to bottom right,#FEDB27, #00B1D1);
+    width: 244px;
+    position: absolute;
+    z-index: 1;
+    padding: 69px;
+    margin-top: 66px;
+    left: 248px;
+
+}
+.project-image{
+    float: right;
+    position: relative;
+    z-index: 0;
+    top: 40px;
+}
+.list-style-2{
+    list-style: none;
+    font-size: 50px;
+    color: #BBBBBB;
+    margin-top: 214px;
+}
+.project-1para{
+    font-size: 30px;
+    line-height: 40px;
+    width: 23%;
+    margin-left: 125px;
+    position: absolute;
+    z-index: 2;
+}
+.project-box{
+    padding: 86px;
+    position: absolute;
+    width: 255px;
+    z-index: 1;
+    height: 275px;
+    background: linear-gradient(to bottom, #FEDB27, #00B1D1);
+    left: 0;
+}
+/* testimonials-section */
+.testimonials-heading{
+    margin-top: 128px;
+    font-size: 50px;
+    /* text-align: center; */
+    margin-left: 148px;
+}
+.testimonials-image{
+    float: right;
+    position: relative;
+    z-index: 0;
+    top: 35px;
+}
+.testimonials-para{
+    font-size: 30px;
+    line-height: 40px;
+    width: 23%;
+    margin-left: 157px;
+    position: absolute;
+    z-index: 2;
+}
+
+.list-style-3{
+    list-style: none;
+    font-size: 50px;
+    color: #BBBBBB;
+    float: right;
+    margin-top: 236px;
+    margin-right: 85px;
+
+}
+.testimonials-box{
+    padding: 86px;
+    position: absolute;
+    width: 255px;
+    z-index: 1;
+    height: 275px;
+    background-image: linear-gradient(to bottom right,#BBBBBB, #00B1D1);
+    left: 0;
+}
+/* contact-section */
+.contact-section{
+    margin-top: 250px;
+}
+.contact-section .heading{
+    margin-bottom: 50px;
+}
+.contact-section .contact-desc{
+    width: 42%;
+    font-size: 20px;
+    line-height: 27px;
+}
+.contact-section .form{
+    position: relative;
+}
+.contact-section .input-cont input , 
+.contact-section .input-cont textarea , 
+.contact-section .input-cont select{
+    background-color: #ECECEC;
+    border-radius: 0;
+    border: none;
+    font-size: 18px;
+    color: #000;
+    padding: 22px 33px;
+}
+.contact-section .input-cont input::placeholder {
+    font-size: 18px;
+    color: #000;
+}
+.contact-section .input-cont input:focus , 
+.contact-section .input-cont textarea:focus ,
+.contact-section .input-cont select:focus{
+    outline: none;
+}
+.contact-section .form .bg-img img{
+    position: absolute;
+    z-index: -1;
+    top: 0;
+}
+.text-btn{
+    float: right;
+    transform: rotate(360deg);
+    border: 1px solid #000;
+    border-radius: 36px;
+    font-size: 18px;
+    line-height: 20px;
+    padding: 10px 27px;
+    margin-top: 35px;
+    
+}
+/* responsive */
+@media screen and (max-width: 1366px){
+    .cont{
+        padding: 0 15%;
+    }
+    .main-screen .text-area h1 {
+        font-size: 51px;
+    }
+    .main-screen .main-screen-text {
+        width: 24%;
+        right: 12%;
+    
+    }
+    .about-section .text .first-para{
+        margin-left: 60px;
+    }
+    .about-section .text .second-content {
+        right: -62px;
+        top: 72%;
+        width: 55%;
+    }
+    .team-section .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets {
+        right: -70px;
+    }
+    .card-section .header .desc{
+        font-size: 24px;
+    }
+    .packages-section .header .desc {
+        font-size: 21px;
+        width: 65%;
+    }
+    .project-para-1 {
+        width: 45%;
+     font-size: 20px;
+      margin-left: 123px;
+     margin-top: 10px;
+    }
+    .testimonial-para{
+         width: 38%;
+         font-size: 20px;
+         margin-left: 123px;
+         margin-top: 10px;
+    }
+    .contact-section .contact-desc{
+        width: 61%;
+    }
+    /* .text-btn{
+        float: none;
+        text-align: right;
+    } */
+    .packages-section .card{
+        padding: 20px 25px;
+    }
+    .swiper-pagination-bullet.swiper-pagination-bullet-active {
+        font-size: 150px!important;
+    }
+}
+@media screen and (max-width: 768px){
+    .main-screen .cont {
+        top: 100px;
+    }
+    .cont{
+        padding: 0 7.5%;
+    }
+    .main-screen .head-scroll{
+        bottom: 6px;
+    }
+    .about-section .about-heading{
+        margin-left: 0px;
+    }
+    .contact-section .form .bg-img img{
+        width: 100%;
+    }
+    .about-section .main-img img{
+        left: 0px;
+        border-radius: 10px;
+    }
+    .about-section .green-arrow img{
+        z-index: -2;
+        left: 60%;
+        display: none;
+    }
+    .about-section .text .first-para{
+        width: 56%;
+        padding-top: 11px;
+    }
+    .about-section .text .second-content{
+        top: 76%;
+       width: 100%;
+       right:unset;
+      }
+    .team-section .box{
+        bottom: 0;
+        height: auto;
+    }
+    .team-section .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets{
+        display: none;
+    }
+    .team-section .team-heading{
+        margin-left: 0px;
+    }
+    .main-screen .main-screen-img{
+        height: 75vh;
+    }
+    .main-screen .main-screen-text{
+        width: 35%;
+        right: 0%;
+        bottom: 60px;
+}
+.card-section .header .heading{
+    padding: 0px;
+}
+.packages-section .header .desc{
+    width: 100%;
+    margin-left: 0px;
+}
+.contact-section .contact-desc{
+    width: 98%;
+
+}
+.packages-section .package-title{
+    margin-top: 20px;
+}
+.packages-section .middle-card p {
+    width: 83%;
+}
+.project-para-1 {
+    width: 100%;
+    margin-left: 0px;
+}
+.project-heading{
+    margin-left: 0px;
+}
+.testimonial-para{
+    width: 100%;
+    margin-left: 0px;
+}
+header .cont{
+    justify-content: space-between;
+}
+.team-section .team-image{
+    width: 100%;
+}
+}
+@media screen and (max-width: 755px){
+    .main-screen .main-screen-text{
+        right: 3%;
+    }
+}
+@media screen and (max-width: 709px){
+    .main-screen .main-screen-text{
+        width: 33%;
+    }
+    .heading {
+        font-size: 40px;
+    }
+    .packages-section .header .desc {
+        width: 167%;
+    }
+}   
+@media screen and (max-width: 565px){
+    .main-screen .text-area h1 {
+    font-size: 32px;
+    }
+    .main-screen .text-area h3{
+        margin-left: 54px;
+    }
+    .card-section .header .bg-img {
+        top: 100px;
+    }
+    .card-section .card-1 {
+     margin-top: 250px;
+    }
+}
+@media screen and (max-width: 486px){
+    .main-screen .main-screen-text{
+        width: 32%
+
+    }
+    .team-section .box {
+        padding: 9px;
+        width: 209px;
+    }
+    .card-section .card-1 {
+        margin-top: 320px;
+    }
+    .about-section .main-img img{
+        left: -13px;
+    }
+}
+@media screen and (max-width: 430px){
+    .about-section .main-img img{
+        height: 520px;
+    }
+    .about-section .text .first-para{
+        margin-left: 5px;
+    }
+    .main-screen .main-screen-text {
+
+    font-size: 14px;
+    width: 30%;
+}
+.main-screen .text-area h3{
+    margin-left: 10px;
+}
+.main-screen .head-scroll {
+    bottom: 5px;
+}
+.card-section .header .bg-img{
+    height: 425px;
+}
+.card-section .category{
+    width: 95%;
+}
+.project-box{
+    width: 199px;
+    padding: 56px;
+    height: 168px;
+}
+.testimonials-box{
+    width: 199px;
+    padding: 56px;
+    height: 168px;
+}
+@media screen and (max-width: 414px){
+  
+
+.main-screen .main-screen-text {
+    
+    width: 34%;
+    margin-bottom: 49px;
+}
+}
+@media screen and (max-width: 375px){
+    .about-section .main-img img{
+        width: 100%;
+    }
+    .about-section .text .first-para {
+    width: 100%;
+    }
+    .card-section .header .bg-img {
+     right: 33px;
+     height: 341px;
+    }
+    .card-section .card-1 {
+     margin-top: 93px;
+    }
+    .main-screen .main-screen-text {
+        font-size: 12px;
+        width: 29%;
+    }
+}
+@media screen and (max-width: 360px){
+
+    .main-screen .main-screen-text {
+        font-size: 12px;
+        width: 34%;
+        margin-bottom: 43px;
+    }
+}
+
